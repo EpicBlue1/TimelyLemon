@@ -22,7 +22,7 @@ class LandingActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         binding.btnStart.setOnClickListener {
-            val username = binding.uName.text
+            val username = binding.uName.text.toString()
 
             //check if empty
             if(username.toString() == ""){
@@ -41,7 +41,7 @@ class LandingActivity : AppCompatActivity() {
                 finish()
             }
 
-
         }
     }
+
 }
