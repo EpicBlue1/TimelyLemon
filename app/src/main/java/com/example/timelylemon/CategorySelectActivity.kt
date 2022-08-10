@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.graphics.Color
+import android.view.WindowManager
 import android.widget.TextView
 import com.example.timelylemon.databinding.ActivityCategorySelectBinding
 
@@ -18,15 +19,25 @@ class CategorySelectActivity : AppCompatActivity() {
         binding = ActivityCategorySelectBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        getWindow().setFlags(
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         data_receive = findViewById(R.id.high_one)
 
         val name = intent.getStringExtra("username")
 
-        data_receive.text = "${name}'s High Score: 200"
+        binding.highOne.text = "${name}'s High Score: 200"
 
         binding.btnBack.setOnClickListener {
             val backbutton = Intent(this, LandingActivity::class.java)
             startActivity(backbutton)
+            finish()
+        }
+
+        binding.btnStart.setOnClickListener {
+            val startTrivia = Intent(this, QuestionsActivity::class.java)
+            startActivity(startTrivia)
             finish()
         }
 

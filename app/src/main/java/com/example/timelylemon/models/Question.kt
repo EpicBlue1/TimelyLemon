@@ -2,7 +2,7 @@ package com.example.timelylemon.models
 
 class Question (
     val id: Int,
-    val questionText: String,
+    val questionTxt: String,
     val Icon: Int,
     val optionOne: String,
     val optionTwo: String,
