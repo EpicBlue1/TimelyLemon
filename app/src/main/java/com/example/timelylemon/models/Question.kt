@@ -3,7 +3,7 @@ package com.example.timelylemon.models
 class Question (
     val id: Int,
     val questionTxt: String,
-    val Icon: Int,
+    val img: Int,
     val optionOne: String,
     val optionTwo: String,
     val optionThree: String,

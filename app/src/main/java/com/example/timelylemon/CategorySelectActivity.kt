@@ -30,13 +30,14 @@ class CategorySelectActivity : AppCompatActivity() {
         binding.highOne.text = "${name}'s High Score: 200"
 
         binding.btnBack.setOnClickListener {
-            val backbutton = Intent(this, LandingActivity::class.java)
-            startActivity(backbutton)
+            val backButton = Intent(this, LandingActivity::class.java)
+            startActivity(backButton)
             finish()
         }
 
-        binding.btnStart.setOnClickListener {
+        binding.qzSeven.setOnClickListener {
             val startTrivia = Intent(this, QuestionsActivity::class.java)
+            intent.putExtra("Trivia", "70")
             startActivity(startTrivia)
             finish()
         }
