@@ -157,9 +157,9 @@ object Constants {
         //Data
         val questionOne = Question(
             id = 1,
-            questionTxt = "Who were the top two stars of the 1976 hit film “The Bad News Bears?",
+            questionTxt = "REEEEE",
             img = R.drawable.cat_one_one,
-            bg = R.drawable.bg_android_sev,
+            bg = R.drawable.bg_android_nine,
             rb = R.drawable.img_cat_eight_ques,
             optionOne = "Farrah Fawcett and Lee Majors",
             optionTwo = "Harrison Ford and Raquel Welch",
@@ -169,9 +169,9 @@ object Constants {
 
         val questionTwo = Question(
             id = 2,
-            questionTxt = "Starting in 1970, a cheerful bright yellow symbol started showing up on buttons, mugs, and t-shirts. What was the four-word expression often depicted with this smiling image?",
+            questionTxt = "BRUH",
             img = R.drawable.cat_one_two,
-            bg = R.drawable.bg_android_sev,
+            bg = R.drawable.bg_android_nine,
             rb = R.drawable.img_cat_eight_ques,
             optionOne = "Time to cheer up",
             optionTwo = "Have a Nice Day",
@@ -183,7 +183,7 @@ object Constants {
             id = 3,
             questionTxt = "In 1974, “People Magazine” covered the May-December relationship between the star of “Cannonball Run” and an older daytime talk show host. Name them both.",
             img = R.drawable.cat_one_three,
-            bg = R.drawable.bg_android_sev,
+            bg = R.drawable.bg_android_nine,
             rb = R.drawable.img_cat_eight_ques,
             optionOne = "Time to cheer up",
             optionTwo = "Have a Nice Day",
@@ -195,7 +195,7 @@ object Constants {
             id = 4,
             questionTxt = "Why did Procter & Gamble replace the “mom” on the cover of the Ivory soapbox in 1972?",
             img = R.drawable.cat_one_four,
-            bg = R.drawable.bg_android_sev,
+            bg = R.drawable.bg_android_nine,
             rb = R.drawable.img_cat_eight_ques,
             optionOne = "Legal issues regarding the rights to the photo",
             optionTwo = "The model was Marilyn Chambers, a porn star",
@@ -207,7 +207,7 @@ object Constants {
             id = 5,
             questionTxt = "Why did Procter & Gamble replace the “mom” on the cover of the Ivory soapbox in 1972?",
             img = R.drawable.cat_one_four,
-            bg = R.drawable.bg_android_sev,
+            bg = R.drawable.bg_android_nine,
             rb = R.drawable.img_cat_eight_ques,
             optionOne = "Legal issues regarding the rights to the photo",
             optionTwo = "The model was Marilyn Chambers, a porn star",
@@ -218,6 +218,8 @@ object Constants {
         all90sQuestions.add(questionOne)
         all90sQuestions.add(questionTwo)
         all90sQuestions.add(questionThree)
+        all90sQuestions.add(questionFour)
+        all90sQuestions.add(questionFive)
 
         return all90sQuestions;
     }

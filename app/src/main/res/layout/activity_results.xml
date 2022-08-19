@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ResultsActivity"
-    android:background="@drawable/bg_android"
     android:padding="20dp"
     android:id="@+id/res_back"
     android:orientation="vertical"
@@ -31,7 +30,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Choose a category"
+            android:text="Back Home"
             android:fontFamily="@font/roboto_black"
             android:textAlignment="center"
             android:textSize="26dp"
@@ -39,7 +38,79 @@
             android:textColor="@color/black"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/img_container"
+        android:gravity="center"
+        app:strokeWidth="0dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/final_score"
+            android:fontFamily="@font/roboto_black"
+            android:text="Score: 150"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
+            android:text="Out of 250"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/img_container"
+        android:gravity="center"
+        android:padding="10dp"
+        app:strokeWidth="0dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
+            android:id="@+id/born_result"
+            android:text="You are definitely a 70's kid"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="140dp"
+        android:padding="17dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/img_btn"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_black"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textSize="26dp" />
+
+    </LinearLayout>
 
 </LinearLayout>

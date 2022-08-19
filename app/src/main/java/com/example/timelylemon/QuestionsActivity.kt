@@ -140,6 +140,7 @@ class QuestionsActivity : AppCompatActivity() {
                     val count = questions.count()
                     Log.i("Number of Questions:", count.toString())
                     intent.putExtra("Score", score)
+                    intent.putExtra("QuestionNum", currentTrivia)
                     intent.putExtra("username", username)
                     startActivity(intent)
                     finish()
