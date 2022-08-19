@@ -21,6 +21,8 @@ class LandingActivity : AppCompatActivity() {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        supportActionBar?.hide()
+
         binding.btnStart.setOnClickListener {
             val username = binding.uName.text.toString()
 
