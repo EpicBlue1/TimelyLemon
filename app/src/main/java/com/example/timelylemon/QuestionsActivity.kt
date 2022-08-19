@@ -10,6 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.timelylemon.databinding.ActivityLandingBinding
 import com.example.timelylemon.databinding.ActivityQuestionsBinding
 import com.example.timelylemon.models.Constants.getAll70sQuestions
+import com.example.timelylemon.models.Constants.getAll80sQuestions
+import com.example.timelylemon.models.Constants.getAll90sQuestions
 import com.example.timelylemon.models.Question
 import com.google.android.material.radiobutton.MaterialRadioButton
 
@@ -32,9 +34,20 @@ class QuestionsActivity : AppCompatActivity() {
 
         val username = intent.getStringExtra("username")
         var questionNumber = intent.getIntExtra("questionNumber", 0)
-        var currentScore = intent.getIntExtra("currentScore", 0)
+        var score = intent.getIntExtra("Score", 0)
+        val currentTrivia = intent.getIntExtra("TriviaNumber", 1);
+        Log.i("Trivia Number", currentTrivia.toString())
 
         var questions = getAll70sQuestions()
+
+        //set current category
+        if(currentTrivia == 1){
+            questions = getAll70sQuestions()
+        } else if(currentTrivia == 2){
+            questions = getAll80sQuestions()
+        } else if(currentTrivia == 3){
+            questions = getAll90sQuestions()
+        }
 
         val currentQuestion = questions[questionNumber]
 
@@ -56,10 +69,67 @@ class QuestionsActivity : AppCompatActivity() {
                 var userAnswer = findViewById<MaterialRadioButton>(selectedAnswer) //find checkbox that has been selected
                 Log.i("Selected Answer: ", userAnswer.text.toString())
 
-                //checked correct
-                if (userAnswer.text.toString() == currentQuestion.optionOne) {
-                    currentScore += 1
-                    Log.i("Correct?: ", "Yes!")
+                //set current category
+                if(currentTrivia == 1){
+                    //check Category One Answers correct
+                    if (userAnswer.text.toString() == questions[0].optionFour) {
+                        score += 50
+                        Log.i("Answerz", "Correct")
+                    } else if (userAnswer.text.toString() == questions[1].optionTwo){
+                        score += 50
+                        Log.i("Answerz", "Correct")
+                    } else if (userAnswer.text.toString() == questions[2].optionTwo){
+                        score += 50
+                        Log.i("Answerz", "Correct")
+                    } else if (userAnswer.text.toString() == questions[3].optionOne){
+                        score += 50
+                        Log.i("Answerz", "Correct")
+                    } else if (userAnswer.text.toString() == questions[4].optionFour){
+                        score += 50
+                        Log.i("Answerz", "Correct")
+                    }
+                } else if(currentTrivia == 2){
+                    //check Category Two Answers correct
+                    if (userAnswer.text.toString() == questions[0].optionTwo) {
+                        Log.i("Answerz", "Correct")
+                        score += 50
+                    } else if (userAnswer.text.toString() == questions[1].optionTwo){
+                        score += 50
+                    } else if (userAnswer.text.toString() == questions[2].optionTwo){
+                        score += 50
+                    } else if (userAnswer.text.toString() == questions[3].optionOne){
+                        score += 50
+                    } else if (userAnswer.text.toString() == questions[4].optionFour){
+                        score += 50
+                    }
+                } else if(currentTrivia == 3){
+                    //check Category Three Answers correct
+                    if (userAnswer.text.toString() == questions[0].optionFour) {
+                        score += 50
+                    } else if (userAnswer.text.toString() == questions[1].optionTwo){
+                        score += 50
+                    } else if (userAnswer.text.toString() == questions[2].optionTwo){
+                        score += 50
+                    } else if (userAnswer.text.toString() == questions[3].optionOne){
+                        Log.i("Answer One:", "Correct")
+                        score += 50
+                    } else if (userAnswer.text.toString() == questions[4].optionFour){
+                        score += 50
+                    }
+                }
+
+                //check Category Two Answers correct
+                if (userAnswer.text.toString() == questions[0].optionFour) {
+                    score += 50
+                    Log.i("Answer One:", "Correct")
+                } else if (userAnswer.text.toString() == questions[1].optionTwo){
+                    score += 50
+                } else if (userAnswer.text.toString() == questions[2].optionTwo){
+                    score += 50
+                } else if (userAnswer.text.toString() == questions[3].optionOne){
+                    score += 50
+                } else if (userAnswer.text.toString() == questions[4].optionFour){
+                    score += 50
                 }
 
                 //Update ui to show result if correct
@@ -67,7 +137,9 @@ class QuestionsActivity : AppCompatActivity() {
                     //if true
                     //Navigate to results
                     val intent = Intent(this, ResultsActivity::class.java)
-                    intent.putExtra("currentScore", currentScore)
+                    val count = questions.count()
+                    Log.i("Number of Questions:", count.toString())
+                    intent.putExtra("Score", score)
                     intent.putExtra("username", username)
                     startActivity(intent)
                     finish()
@@ -77,7 +149,7 @@ class QuestionsActivity : AppCompatActivity() {
                     intent.putExtra("username", username)
                     intent.putExtra("questionNumber", questionNumber + 1)
                     //pass score
-                    intent.putExtra("currentScore", currentScore)
+                    intent.putExtra("Score", score)
 
                     startActivity(intent)
                     //dont go back
@@ -93,6 +165,10 @@ class QuestionsActivity : AppCompatActivity() {
         binding.rbAnswerTwo.text = CurrentQuestion.optionTwo
         binding.rbAnswerThree.text = CurrentQuestion.optionThree
         binding.rbAnswerFour.text = CurrentQuestion.optionFour
+        binding.rbAnswerOne.setBackgroundResource(CurrentQuestion.rb)
+        binding.rbAnswerTwo.setBackgroundResource(CurrentQuestion.rb)
+        binding.rbAnswerThree.setBackgroundResource(CurrentQuestion.rb)
+        binding.rbAnswerFour.setBackgroundResource(CurrentQuestion.rb)
         binding.qImage.setImageResource(CurrentQuestion.img)
         binding.qsAll.setBackgroundResource(CurrentQuestion.bg)
     }

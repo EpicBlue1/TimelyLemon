@@ -24,7 +24,6 @@
         android:layout_marginTop="60dp"
         app:strokeWidth="0dp"
 >
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -40,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:fontFamily="@font/roboto"
-            android:text="The trivia app themed around all movie and music pop culture from the 70’s, 80’s, 90’s and 2000’s. Test your general knowledge!"
+            android:text="The trivia app themed around all movie and music pop culture from the 70’s, 80’s and 90’s. Test your knowledge and see when were you born!"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="20dp"

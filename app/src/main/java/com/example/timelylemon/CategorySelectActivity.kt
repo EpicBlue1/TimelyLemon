@@ -37,6 +37,16 @@ class CategorySelectActivity : AppCompatActivity() {
 
         binding.qzSeven.setOnClickListener {
             val startTrivia = Intent(this, QuestionsActivity::class.java)
+            startTrivia.putExtra("TriviaNumber", 1)
+            startActivity(startTrivia)
+            finish()
+        }
+
+        binding.qzEight.setOnClickListener {
+            val startTrivia = Intent(this, QuestionsActivity::class.java)
+            startTrivia.putExtra("TriviaNumber", 2)
+//            //make sure score is 0
+//            startTrivia.putExtra("Score", 0)
             startActivity(startTrivia)
             finish()
         }
