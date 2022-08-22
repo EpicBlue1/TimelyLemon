@@ -22,6 +22,7 @@
             android:src="@drawable/img_icon" />
 
         <ImageView
+            android:id="@+id/btn_settings"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
@@ -55,7 +56,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:fontFamily="@font/roboto"
-            android:text="Timely Lemon is the trivia app based on pop music and movies from the 70's to the 90's. Test yourself and find out in which era you were supposed to be born !"
+            android:text="Timely Lemon is the trivia app based on pop culture from the 70's to the 90's. Test yourself and find out in which era you were supposed to be born !"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="18sp" />
@@ -93,10 +94,30 @@
     </EditText>
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/prev_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/btn_start"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="100dp"
         android:padding="17dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/img_btn"

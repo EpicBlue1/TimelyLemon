@@ -7,6 +7,7 @@ import android.graphics.Color
 import android.view.WindowManager
 import android.widget.TextView
 import com.example.timelylemon.databinding.ActivityCategorySelectBinding
+import com.example.timelylemon.models.Constants
 
 class CategorySelectActivity : AppCompatActivity() {
 
@@ -23,11 +24,21 @@ class CategorySelectActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        supportActionBar?.hide()
+
         data_receive = findViewById(R.id.high_one)
 
         val name = intent.getStringExtra("username")
 
-        binding.highOne.text = "${name}'s High Score: 200"
+        val sharedPref = getSharedPreferences("Pref", MODE_PRIVATE)
+        val lastUser  = sharedPref.getString(Constants.LAST_USER, "No One")
+        val lastCatOne = sharedPref.getInt(Constants.CAT_ONE_SCORE, 0)
+        val lastCatTwo = sharedPref.getInt(Constants.CAT_TWO_SCORE, 0)
+        val lastCatThree = sharedPref.getInt(Constants.CAT_THREE_SCORE, 0)
+
+        binding.highOne.text = "Previous High Score: $lastCatOne"
+        binding.highTwo.text = "Previous High Score: $lastCatTwo"
+        binding.highThree.text = "Previous High Score: $lastCatThree"
 
         binding.btnBack.setOnClickListener {
             val backButton = Intent(this, LandingActivity::class.java)

@@ -23,8 +23,15 @@ class ResultsActivity : AppCompatActivity() {
         val username = intent.getStringExtra("username");
         val currentCat = intent.getIntExtra("QuestionNum", 1);
 
+        val sharedPref = getSharedPreferences("Pref", MODE_PRIVATE)
+        val lastUser  = sharedPref.getString(Constants.LAST_USER, "No One")
+        val lastScore  = sharedPref.getInt(Constants.LAST_SCORE, 0)
+        val lastCatOne = sharedPref.getInt(Constants.CAT_ONE_SCORE, 0)
+        val lastCatTwo = sharedPref.getInt(Constants.CAT_TWO_SCORE, 0)
+        val lastCatThree = sharedPref.getInt(Constants.CAT_THREE_SCORE, 0)
+
         binding.btnBack.setOnClickListener {
-            saveResults(username.toString(), finalScore)
+            saveResults(username.toString(), finalScore, currentCat)
 
             val backButton = Intent(this, LandingActivity::class.java)
             startActivity(backButton)
@@ -32,9 +39,11 @@ class ResultsActivity : AppCompatActivity() {
         }
 
         binding.btnCat.setOnClickListener {
-            saveResults(username.toString(), finalScore)
+            saveResults(username.toString(), finalScore, currentCat)
 
             val catButton = Intent(this, CategorySelectActivity::class.java)
+            catButton.putExtra("Score", finalScore)
+            catButton.putExtra("username", username)
             startActivity(catButton)
             finish()
         }
@@ -46,12 +55,18 @@ class ResultsActivity : AppCompatActivity() {
 
             binding.finalScore.text = "Score: $finalScore"
 
-            if(finalScore == 250){
+            if(lastCatOne < finalScore){
+                binding.newScore.text = "New High Score!"
+            }
+
+            if(finalScore > 250){
                 binding.bornResult.text = "$username, you are definitely a 70's kid"
             } else if(finalScore in 101..200) {
                 binding.bornResult.text = "$username, you might be a 80's kid"
-            } else if (finalScore in 0..100){
+            } else if (finalScore in 49..100){
                 binding.bornResult.text = "$username, you might be a 90's kid"
+            } else if(finalScore == 0){
+                binding.bornResult.text = "Too bad!"
             }
 
         } else if(currentCat == 2) {
@@ -59,12 +74,18 @@ class ResultsActivity : AppCompatActivity() {
 
             binding.finalScore.text = "Score: $finalScore"
 
-            if(finalScore == 250){
+            if(lastCatTwo < finalScore){
+                binding.newScore.text = "New High Score!"
+            }
+
+            if(finalScore > 250){
                 binding.bornResult.text = "$username, you are definitely an 80's kid"
             } else if(finalScore in 101..200) {
                 binding.bornResult.text = "$username, you might be a 70's kid"
-            } else if (finalScore in 0..100){
+            } else if (finalScore in 49..100){
                 binding.bornResult.text = "$username, you might be a 90's kid"
+            } else if(finalScore == 0){
+                binding.bornResult.text = "Too bad!"
             }
 
         } else if(currentCat == 3){
@@ -72,25 +93,56 @@ class ResultsActivity : AppCompatActivity() {
 
             binding.finalScore.text = "Score: $finalScore"
 
-            if(finalScore == 250){
+            if(lastCatTwo < finalScore){
+                binding.newScore.text = "New High Score!"
+            }
+
+            if(finalScore > 250){
                 binding.bornResult.text = "$username, you are definitely a 90's kid"
             } else if(finalScore in 101..200) {
                 binding.bornResult.text = "$username, you might be a 80's kid"
-            } else if (finalScore in 0..100){
+            } else if (finalScore in 49..100){
                 binding.bornResult.text = "$username, you might be a 70's kid"
+            } else if(finalScore == 0){
+                binding.bornResult.text = "Too bad!"
             }
 
         }
     }
 
-    private fun saveResults(username: String, finalScore: Int){
+    private fun saveResults(username: String, finalScore: Int, currentCat: Int){
         val pref = getSharedPreferences("Pref", Context.MODE_PRIVATE)
         val editor = pref.edit()
+        val prevScore = pref.getInt(Constants.LAST_SCORE, 0)
+        val prevOneScore = pref.getInt(Constants.CAT_ONE_SCORE, 0)
+        val prevTwoScore = pref.getInt(Constants.CAT_TWO_SCORE, 0)
+        val prevThreeScore = pref.getInt(Constants.CAT_THREE_SCORE, 0)
 
         editor.apply{
-            putString(Constants.LAST_USER, username)
-            putInt(Constants.LAST_SCORE, finalScore)
-            apply() //end
+            if(prevScore > finalScore){
+                putString(Constants.LAST_USER, username)
+                putInt(Constants.LAST_SCORE, prevScore)
+                if(currentCat == 1){
+                    putInt(Constants.CAT_ONE_SCORE, prevOneScore)
+                } else if(currentCat == 2){
+                    putInt(Constants.CAT_TWO_SCORE, prevTwoScore)
+                } else if(currentCat == 3){
+                    putInt(Constants.CAT_THREE_SCORE, prevThreeScore)
+                }
+                apply() //end
+
+            } else {
+                putString(Constants.LAST_USER, username)
+                putInt(Constants.LAST_SCORE, finalScore)
+                if(currentCat == 1){
+                    putInt(Constants.CAT_ONE_SCORE, finalScore)
+                } else if(currentCat == 2){
+                    putInt(Constants.CAT_TWO_SCORE, finalScore)
+                } else if(currentCat == 3){
+                    putInt(Constants.CAT_THREE_SCORE, finalScore)
+                }
+                apply() //end
+            }
         }
     }
 }

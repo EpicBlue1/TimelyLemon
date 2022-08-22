@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.WindowManager
 import android.widget.Toast
 import com.example.timelylemon.databinding.ActivityLandingBinding
+import com.example.timelylemon.models.Constants
 import com.google.android.material.snackbar.Snackbar
 
 class LandingActivity : AppCompatActivity() {
@@ -22,6 +23,26 @@ class LandingActivity : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         supportActionBar?.hide()
+
+        val sharedPref = getSharedPreferences("Pref", MODE_PRIVATE)
+        val lastUser  = sharedPref.getString(Constants.LAST_USER, "No One")
+        val lastScore  = sharedPref.getInt(Constants.LAST_SCORE, 0)
+        val lastCatOne = sharedPref.getInt(Constants.CAT_ONE_SCORE, 0)
+        val lastCatTwo = sharedPref.getInt(Constants.CAT_TWO_SCORE, 0)
+        val lastCatThree = sharedPref.getInt(Constants.CAT_THREE_SCORE, 0)
+        val totalLastScore = lastCatOne + lastCatTwo + lastCatThree
+
+        if(lastScore == 0){
+            binding.prevScore.text = "Good Luck!"
+        } else {
+            binding.prevScore.text = "Previous scores in total: $totalLastScore"
+        }
+
+        binding.btnSettings.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         binding.btnStart.setOnClickListener {
             val username = binding.uName.text.toString()

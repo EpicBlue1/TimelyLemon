@@ -7,7 +7,10 @@ import com.example.timelylemon.R
 object Constants {
 
     val LAST_USER: String = "username"
-        val LAST_SCORE: String = "lastscore"
+    val LAST_SCORE: String = "lastscore"
+    val CAT_ONE_SCORE: String = "catonescore"
+    val CAT_TWO_SCORE: String = "cattwoscore"
+    val CAT_THREE_SCORE: String = "cathreescore"
 
     fun getAll70sQuestions() : ArrayList<Question> {
         var all70sQuestions = ArrayList<Question>()

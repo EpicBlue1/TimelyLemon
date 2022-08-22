@@ -118,21 +118,7 @@ class QuestionsActivity : AppCompatActivity() {
                     }
                 }
 
-                //check Category Two Answers correct
-                if (userAnswer.text.toString() == questions[0].optionFour) {
-                    score += 50
-                    Log.i("Answer One:", "Correct")
-                } else if (userAnswer.text.toString() == questions[1].optionTwo){
-                    score += 50
-                } else if (userAnswer.text.toString() == questions[2].optionTwo){
-                    score += 50
-                } else if (userAnswer.text.toString() == questions[3].optionOne){
-                    score += 50
-                } else if (userAnswer.text.toString() == questions[4].optionFour){
-                    score += 50
-                }
-
-                //Update ui to show result if correct
+                //check if done
                 if (questionNumber + 1 == questions.count()) {
                     //if true
                     //Navigate to results
@@ -141,6 +127,7 @@ class QuestionsActivity : AppCompatActivity() {
                     Log.i("Number of Questions:", count.toString())
                     intent.putExtra("Score", score)
                     intent.putExtra("QuestionNum", currentTrivia)
+                    Log.i("current Cat", currentTrivia.toString())
                     intent.putExtra("username", username)
                     startActivity(intent)
                     finish()
@@ -148,6 +135,7 @@ class QuestionsActivity : AppCompatActivity() {
                     val intent = Intent(this, QuestionsActivity::class.java)
                     //pass username and next question
                     intent.putExtra("username", username)
+                    intent.putExtra("QuestionNum", currentTrivia)
                     intent.putExtra("questionNumber", questionNumber + 1)
                     //pass score
                     intent.putExtra("Score", score)
