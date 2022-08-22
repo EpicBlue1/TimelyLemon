@@ -39,6 +39,7 @@ class CategorySelectActivity : AppCompatActivity() {
         binding.highOne.text = "Previous High Score: $lastCatOne"
         binding.highTwo.text = "Previous High Score: $lastCatTwo"
         binding.highThree.text = "Previous High Score: $lastCatThree"
+        binding.selCat.text = "Choose a Category $name"
 
         binding.btnBack.setOnClickListener {
             val backButton = Intent(this, LandingActivity::class.java)

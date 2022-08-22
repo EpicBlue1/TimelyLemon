@@ -101,6 +101,7 @@
                 android:textColor="@color/black"
                 android:textSize="22dp"
                 android:paddingRight="15dp"
+                android:paddingLeft="5dp"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="wrap_content"
@@ -109,6 +110,7 @@
                 android:fontFamily="@font/roboto_black"
                 android:text="Rein"
                 android:paddingTop="7dp"
+                android:paddingLeft="5dp"
                 android:textColor="@color/black"
                 android:textSize="22dp"
                 android:paddingRight="20dp"
@@ -120,7 +122,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="12dp"
             android:background="@drawable/img_container"
             android:backgroundTint="@color/red">
             <TextView
@@ -136,62 +141,74 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:orientation="horizontal"
+        android:layout_height="170dp"
+        android:orientation="vertical"
         android:background="@drawable/img_container"
-        android:padding="10dp"
-        android:layout_marginTop="15dp"
-        app:strokeWidth="0dp"
-        >
+        android:padding="3dp"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/github"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GitHub"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="10dp"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="left"
-            android:orientation="vertical">
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/profile"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_black"
-                android:text="GitHub:"
-                android:textAlignment="center"
-                android:paddingTop="5dp"
-                android:textColor="@color/black"
-                android:textSize="22dp"
-                android:paddingRight="20dp"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/roboto_black"
                 android:text="EpicBlue1"
                 android:textAlignment="center"
-                android:paddingTop="5dp"
+                android:textSize="22dp"
+                android:textStyle="bold"
                 android:textColor="@color/black"
-                android:textSize="18dp"
-                android:paddingRight="20dp"
-                android:textStyle="bold" />
-            <ImageView
-                android:layout_width="67dp"
-                android:layout_height="67dp"
-                android:layout_marginTop="5dp"
-                android:src="@drawable/profile"/>
+                android:padding="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/link_github"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginRight="14dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/img_container">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Visit"/>
+            </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/link_github"
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:background="@drawable/img_container">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Visit"
-                android:textColor="@color/black"
-                android:textSize="22dp"
-                android:textStyle="bold"/>
-        </LinearLayout>
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textAlignment="center"
+            android:text="Hi I am Reinhardt de Beer, a second year developer at Open Window. Find out more by clicking visit!">
+
+        </TextView>
 
     </LinearLayout>
 
@@ -208,7 +225,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_black"
-            android:text="Version 1.03"
+            android:text="Version 1.05"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="22dp"

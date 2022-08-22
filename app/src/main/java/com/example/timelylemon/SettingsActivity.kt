@@ -21,12 +21,13 @@ class SettingsActivity : AppCompatActivity() {
 
         getWindow().setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
-            WindowManager.LayoutParams.FLAG_FULLSCREEN);
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
+        );
         supportActionBar?.hide()
 
         val sharedPref = getSharedPreferences("Pref", MODE_PRIVATE)
-        val lastUser  = sharedPref.getString(Constants.LAST_USER, "No One")
-        val lastScore  = sharedPref.getInt(Constants.LAST_SCORE, 0)
+        val lastUser = sharedPref.getString(Constants.LAST_USER, "No One")
+        val lastScore = sharedPref.getInt(Constants.LAST_SCORE, 0)
         val lastCatOne = sharedPref.getInt(Constants.CAT_ONE_SCORE, 0)
         val lastCatTwo = sharedPref.getInt(Constants.CAT_TWO_SCORE, 0)
         val lastCatThree = sharedPref.getInt(Constants.CAT_THREE_SCORE, 0)
@@ -43,7 +44,7 @@ class SettingsActivity : AppCompatActivity() {
             binding.setPrevName.text = "No One"
             binding.setPrevScore.text = "High Scores: 0"
 
-            editor.apply{
+            editor.apply {
                 putString(Constants.LAST_USER, "No One")
                 putInt(Constants.LAST_SCORE, 0)
                 putInt(Constants.CAT_ONE_SCORE, 0)
@@ -60,15 +61,19 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         binding.linkGithub.setOnClickListener {
-            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/EpicBlue1/TimelyLemon"));
-            startActivity(browserIntent);
+//            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/EpicBlue1/TimelyLemon"));
+//            startActivity(browserIntent);
+//        }
+
+            binding.linkWallpapers.setOnClickListener {
+                val browserIntent = Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("https://drive.google.com/file/d/1VRS_HaiYa9qUWJRRMlf0HWygkCbZoNoO/view?usp=sharing")
+                );
+                startActivity(browserIntent);
+            }
+
+
         }
-
-        binding.linkWallpapers.setOnClickListener {
-            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://drive.google.com/file/d/1VRS_HaiYa9qUWJRRMlf0HWygkCbZoNoO/view?usp=sharing"));
-            startActivity(browserIntent);
-        }
-
-
     }
 }
