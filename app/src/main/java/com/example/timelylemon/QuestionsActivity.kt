@@ -84,7 +84,7 @@ class QuestionsActivity : AppCompatActivity() {
                     } else if (userAnswer.text.toString() == questions[3].optionOne){
                         score += 50
                         Log.i("Answerz", "Correct")
-                    } else if (userAnswer.text.toString() == questions[4].optionFour){
+                    } else if (userAnswer.text.toString() == questions[4].optionThree){
                         score += 50
                         Log.i("Answerz", "Correct")
                     }
@@ -151,6 +151,7 @@ class QuestionsActivity : AppCompatActivity() {
                     intent.putExtra("questionNumber", questionNumber + 1)
                     //pass score
                     intent.putExtra("Score", score)
+                    intent.putExtra("TriviaNumber", currentTrivia)
 
                     startActivity(intent)
                     //dont go back

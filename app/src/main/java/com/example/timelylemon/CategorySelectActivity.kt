@@ -38,6 +38,7 @@ class CategorySelectActivity : AppCompatActivity() {
         binding.qzSeven.setOnClickListener {
             val startTrivia = Intent(this, QuestionsActivity::class.java)
             startTrivia.putExtra("TriviaNumber", 1)
+            startTrivia.putExtra("username", name)
             startActivity(startTrivia)
             finish()
         }
@@ -45,8 +46,7 @@ class CategorySelectActivity : AppCompatActivity() {
         binding.qzEight.setOnClickListener {
             val startTrivia = Intent(this, QuestionsActivity::class.java)
             startTrivia.putExtra("TriviaNumber", 2)
-//            //make sure score is 0
-//            startTrivia.putExtra("Score", 0)
+            startTrivia.putExtra("username", name)
             startActivity(startTrivia)
             finish()
         }
@@ -54,8 +54,7 @@ class CategorySelectActivity : AppCompatActivity() {
         binding.qzNine.setOnClickListener {
             val startTrivia = Intent(this, QuestionsActivity::class.java)
             startTrivia.putExtra("TriviaNumber", 3)
-            //make sure score is 0
-            startTrivia.putExtra("Score", 0)
+            startTrivia.putExtra("username", name)
             startActivity(startTrivia)
             finish()
         }

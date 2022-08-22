@@ -56,15 +56,6 @@
             android:textColor="@color/black"
             android:textSize="42sp"
             android:textStyle="bold" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_black"
-            android:text="Out of 250"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -92,7 +83,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/btn_home"
+        android:id="@+id/btn_cat"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_marginTop="140dp"
