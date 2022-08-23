@@ -44,7 +44,6 @@ class CategorySelectActivity : AppCompatActivity() {
         binding.btnBack.setOnClickListener {
             val backButton = Intent(this, LandingActivity::class.java)
             startActivity(backButton)
-            finish()
         }
 
         binding.qzSeven.setOnClickListener {

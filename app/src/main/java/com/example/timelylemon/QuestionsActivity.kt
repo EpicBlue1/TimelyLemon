@@ -110,19 +110,19 @@ class QuestionsActivity : AppCompatActivity() {
                     }
                 } else if(currentTrivia == 3){
                     //check Category Three Answers correct
-                    if (userAnswer.text.toString() == questions[0].optionFour) {
+                    if (userAnswer.text.toString() == questions[0].optionTwo) {
                         score += 50
                         userAnswer.setBackgroundResource(R.drawable.img_cat_nine_correct)
-                    } else if (userAnswer.text.toString() == questions[1].optionTwo){
+                    } else if (userAnswer.text.toString() == questions[1].optionThree){
                         score += 50
                         userAnswer.setBackgroundResource(R.drawable.img_cat_nine_correct)
-                    } else if (userAnswer.text.toString() == questions[2].optionTwo){
+                    } else if (userAnswer.text.toString() == questions[2].optionOne){
                         score += 50
                         userAnswer.setBackgroundResource(R.drawable.img_cat_nine_correct)
                     } else if (userAnswer.text.toString() == questions[3].optionOne){
                         score += 50
                         userAnswer.setBackgroundResource(R.drawable.img_cat_nine_correct)
-                    } else if (userAnswer.text.toString() == questions[4].optionThree){
+                    } else if (userAnswer.text.toString() == questions[4].optionFour){
                         score += 50
                         userAnswer.setBackgroundResource(R.drawable.img_cat_nine_correct)
                     }

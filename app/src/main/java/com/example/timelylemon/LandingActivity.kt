@@ -41,7 +41,6 @@ class LandingActivity : AppCompatActivity() {
         binding.btnSettings.setOnClickListener {
             val intent = Intent(this, SettingsActivity::class.java)
             startActivity(intent)
-            finish()
         }
 
         binding.btnStart.setOnClickListener {
@@ -61,7 +60,6 @@ class LandingActivity : AppCompatActivity() {
                 //parse data
                 intent.putExtra("username", username.toString())
                 startActivity(intent)
-                finish()
             }
 
         }

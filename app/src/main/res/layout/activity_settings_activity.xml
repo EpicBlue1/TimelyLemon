@@ -213,6 +213,7 @@
                     android:paddingLeft="5dp"
                     android:paddingTop="5dp"
                     android:paddingBottom="5dp"
+                    android:textColor="@color/black"
                     android:textAlignment="center"
                     android:text="Hi I am Reinhardt de Beer, a second year developer at Open Window. Find out more by clicking visit!">
 
@@ -246,11 +247,13 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="https://boomagain.com/70s-trivia/"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:layout_marginTop="10dp"
                         android:text="https://groupgames101.com/90s-trivia-questions/"/>
 
@@ -258,6 +261,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
                         android:text="https://groupgames101.com/80s-trivia-questions-and-answers/"/>
 
                 </LinearLayout>

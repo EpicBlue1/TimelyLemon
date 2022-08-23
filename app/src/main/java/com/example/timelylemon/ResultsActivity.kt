@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.timelylemon.databinding.ActivityResultsBinding
 import com.example.timelylemon.models.Constants
 import com.example.timelylemon.models.Question
@@ -48,6 +49,8 @@ class ResultsActivity : AppCompatActivity() {
             finish()
         }
 
+        Log.i("CurrenntCat" , currentCat.toString())
+
 
         //update ui based on cat
         if(currentCat == 1){
@@ -59,8 +62,9 @@ class ResultsActivity : AppCompatActivity() {
                 binding.newScore.text = "New High Score!"
             }
 
-            if(finalScore > 250){
+            if(finalScore >= 250){
                 binding.bornResult.text = "$username, you are definitely a 70's kid"
+                Log.i("Category Current", "One")
             } else if(finalScore in 101..200) {
                 binding.bornResult.text = "$username, you just might be a 80's kid"
             } else if (finalScore in 49..100){
@@ -78,7 +82,7 @@ class ResultsActivity : AppCompatActivity() {
                 binding.newScore.text = "New High Score!"
             }
 
-            if(finalScore > 250){
+            if(finalScore >= 250){
                 binding.bornResult.text = "$username, you are definitely an 80's kid"
             } else if(finalScore in 101..200) {
                 binding.bornResult.text = "$username, you just might be a 70's kid"
@@ -97,8 +101,9 @@ class ResultsActivity : AppCompatActivity() {
                 binding.newScore.text = "New High Score!"
             }
 
-            if(finalScore > 250){
+            if(finalScore >= 250){
                 binding.bornResult.text = "$username, you are definitely a 90's kid"
+                Log.i("Category Current", "One")
             } else if(finalScore in 101..200) {
                 binding.bornResult.text = "$username, you just might be a 80's kid"
             } else if (finalScore in 49..100){

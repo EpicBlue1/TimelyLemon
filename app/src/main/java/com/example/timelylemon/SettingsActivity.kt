@@ -57,13 +57,12 @@ class SettingsActivity : AppCompatActivity() {
         binding.btnBack.setOnClickListener {
             val intent = Intent(this, LandingActivity::class.java)
             startActivity(intent)
-            finish()
         }
 
         binding.linkGithub.setOnClickListener {
-//            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/EpicBlue1/TimelyLemon"));
-//            startActivity(browserIntent);
-//        }
+            val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/EpicBlue1/TimelyLemon"));
+            startActivity(browserIntent);
+        }
 
             binding.linkWallpapers.setOnClickListener {
                 val browserIntent = Intent(
@@ -76,4 +75,3 @@ class SettingsActivity : AppCompatActivity() {
 
         }
     }
-}
