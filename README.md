@@ -57,10 +57,13 @@ Run the following in the command-line to clone the project:
 
 ## Features and Functions
 
-- An overview displaying all members added total income, expenses and total tax expense (monthly).
-- Add Users and tax bracket and income after tax will be automatically calculated.
-- Add expenses and track total expenses.
-- Calculate savings based on income after tax or before tax.
+- High scores/ Previous scores are saved in storage so they can be viewed even after closing the app.
+- High scores can be cleared
+- High Score for each category are saved
+- Custom UI and animations
+- Trivia Questions about 70's 80's and 90's pop culture
+- Answer validation
+- Responses based on scores and specific category
 
 ## Development Process
 
@@ -77,12 +80,11 @@ Run the following in the command-line to clone the project:
     <img src="assets/UserFlow.jpg" align="center" height="450" >
 </p>
 
-## Challenges
+## Challenges encountered
 
-* Jest is inconsistent at times
-* Testing useStates seems to be impossible
-* Getting grand children to set useStates in a Parent
-* Infinite loops due to useEffects not wanting to update
+* Layout styling inside kotlin is limited (grid, as far as I know, can't be set to span two columns)
+* Kotlin is still young, cant find much help online when stuck
+* Inconsistencies between the way you style elements
 
 ## Final Outcome
 
@@ -104,10 +106,6 @@ Throughout the project I had to create a lot of custom ui and ended up making so
 </p>
 
 [Download](https://drive.google.com/file/d/1SwXcHJvZ8XLswMH9NlxUMMFmEw1DMTv7/view?usp=sharing)
-
-### Promotional Video
-
-[Promotional Video](https://youtu.be/_ifrJrLPCv0)
 
 ### Video Demonstration
 
