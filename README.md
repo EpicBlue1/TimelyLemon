@@ -27,6 +27,7 @@ Timely Lemon is a trivia android app developed in Android Studio using Kotlin. T
     * [Challenges](#Challenges)
 * [Final-Outcome](#Final-Outcome)
     * [Mockups](#Mockups)
+    * [Wallpapers](#Wallpapers-Link)
     * [Video-Demonstration](#Video-Demonstration)
     * [Final-Outcome](#Final-Outcome)
 * [Authors](#Authors)
@@ -51,8 +52,8 @@ Run the following in the command-line to clone the project:
 
 | Name              | Link                                                                     |
 | ----------------- | ------------------------------------------------------------------------ |
-| <p align="left"><img src="assets/Logo.png" align="center" height="35" width="35" ></p> <p align="left">Android Studio</p> |  https://developer.android.com/studio |
-| <p align="left"><img src="assets/Logo.png" align="center" height="35" width="35" ></p> <p align="left">Android Studio</p> Kotlin |  https://kotlinlang.org/ |
+| <p align="center"><img src="assets/Logo.png" align="center" height="35" width="35" ></p> <p align="left">Android Studio</p> |  https://developer.android.com/studio |
+| <p align="center"><img src="assets/Logo.png" align="center" height="35" width="35" ></p> <p align="left">Android Studio</p> |  https://kotlinlang.org/ |
 
 ## Features and Functions
 
@@ -73,7 +74,7 @@ Run the following in the command-line to clone the project:
 ## Development Process
 
 ### Ideation
-[Pinterest Board For Concept](https://za.pinterest.com/debeer0072/unit-testing-website/)
+[Pinterest Board For Concept](https://za.pinterest.com/debeer0072/android_t3_y2/)
 
 ### Wireframe
 ![App Screenshot](src/img/Wireframe.jpg)
@@ -101,6 +102,12 @@ Run the following in the command-line to clone the project:
 ![Mockup Two](src/img/Mockup.jpg)
 
 ![Mockup Three](src/img/MockupTwo.jpg)
+
+### Wallpapers Link
+
+Throughout the project I had to create a lot of custom ui and ended up making some nice backgrounds/wallpapers. Feel free to download.
+
+[Wallpapers](https://drive.google.com/file/d/1SwXcHJvZ8XLswMH9NlxUMMFmEw1DMTv7/view?usp=sharing)
 
 ### Promotional Video
 

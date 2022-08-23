@@ -67,7 +67,7 @@ class SettingsActivity : AppCompatActivity() {
             binding.linkWallpapers.setOnClickListener {
                 val browserIntent = Intent(
                     Intent.ACTION_VIEW,
-                    Uri.parse("https://drive.google.com/file/d/1VRS_HaiYa9qUWJRRMlf0HWygkCbZoNoO/view?usp=sharing")
+                    Uri.parse("https://drive.google.com/file/d/1SwXcHJvZ8XLswMH9NlxUMMFmEw1DMTv7/view?usp=sharing")
                 );
                 startActivity(browserIntent);
             }
