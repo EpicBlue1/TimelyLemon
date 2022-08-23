@@ -1,20 +1,20 @@
 ## Repo Info
 
-![GitHub repo size](https://img.shields.io/github/repo-size/EpicBlue1/boltbudget)
-![GitHub watchers](https://img.shields.io/github/watchers/EpicBlue1/boltbudget)
-![GitHub language count](https://img.shields.io/github/languages/count/EpicBlue1/boltbudget)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/EpicBlue1/boltbudget)
+![GitHub repo size](https://img.shields.io/github/repo-size/EpicBlue1/TimelyLemon)
+![GitHub watchers](https://img.shields.io/github/watchers/EpicBlue1/TimelyLemon)
+![GitHub language count](https://img.shields.io/github/languages/count/EpicBlue1/TimelyLemon)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/EpicBlue1/TimelyLemon)
 
 
 Reinhardt de Beer
 21100115 - DV_202_V2
 
-# Bolt Budget - Unit Testing
+# TimelyLemon - Android Term 3
 
-A web application designed for estimating your family's budget, as well as implementing, testing, and repairing unit tests!
+Timely Lemon is a trivia android app developed in Android Studio using Kotlin. This trivia app is based on pop culture from the 70's to the 90's. Based on your score you'll find out in which era you were supposed to be born.
 
 
-<img src="src/img/Logo.png" align="center" height="200" width="200" >
+<img src="assets/Logo.png" align="center" height="200" width="200" >
 
 
 ## Table of contents
@@ -34,6 +34,7 @@ A web application designed for estimating your family's budget, as well as imple
 * [Authors](#Authors)
 * [License](#License)
 * [Contact](#Contact)
+
 ## Installation
 
 1. GitHub Desktop
@@ -44,15 +45,8 @@ Run the following in the command-line to clone the project:
    ```sh
    git clone https://github.com/EpicBlue1/TimelyLemon.git
    ```
-    Open `IDE` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
+    Open `Android Studio` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
-3. Install Dependencies
-Run the following in the command-line to install all the required dependencies:
-   ```sh
-   npm install
-   ```
-
-4. An API key is not required## Dependancies Utilized
 
 ## Dependancies Utilized
 
