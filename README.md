@@ -98,18 +98,11 @@ Run the following in the command-line to clone the project:
 ### Mockups
 
 <p align="left">
-    <img src="assets/Mockup_Android_T3_1.png" align="center" height="300" >
+    <img src="assets/Mockup_Android_T3_1.png" align="left" height="200" >
+    <img src="assets/Mockup_Android_T3_2.png" align="left" height="200" >
+    <img src="assets/Mockup_Android_T3_3.png" align="left" height="200" >
 </p>
-
-<p align="left">
-    <img src="assets/Mockup_Android_T3_2.png" align="center" height="300" >
-</p>
-
-<p align="left">
-    <img src="assets/Mockup_Android_T3_3.png" align="center" height="300" >
-</p
-
-### Wallpapers Link
+## Wallpapers Link
 
 Throughout the project I had to create a lot of custom ui and ended up making some nice backgrounds/wallpapers. Feel free to download!
 
