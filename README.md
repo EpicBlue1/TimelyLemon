@@ -33,6 +33,7 @@ Timely Lemon is a trivia android app developed in Android Studio using Kotlin. T
 * [Authors](#Authors)
 * [License](#License)
 * [Contact](#Contact)
+* [Acknowledgements](#Acknowledgements)
 
 ## Installation
 
@@ -76,11 +77,15 @@ Run the following in the command-line to clone the project:
 ### Ideation
 [Pinterest Board For Concept](https://za.pinterest.com/debeer0072/android_t3_y2/)
 
-### Wireframe
-![App Screenshot](src/img/Wireframe.jpg)
+### Wireframes
+<p align="left">
+    <img src="assets/Wireframes.jpg" align="left" height="350" >
+</p>
 
 ### User FLow
-![App Screenshot](src/img/UserFlow.png)
+<p align="left">
+    <img src="assets/UserFlow.jpg" align="left" height="450" >
+</p>
 
 * Utilized React `React` dependency for building the project
 * Utilized React `Jest` dependency for testing my code (functions and renders)
@@ -102,6 +107,8 @@ Run the following in the command-line to clone the project:
     <img src="assets/Mockup_Android_T3_2.png" align="left" height="200" >
     <img src="assets/Mockup_Android_T3_3.png" align="left" height="200" >
 </p>
+
+
 ## Wallpapers Link
 
 Throughout the project I had to create a lot of custom ui and ended up making some nice backgrounds/wallpapers. Feel free to download!
