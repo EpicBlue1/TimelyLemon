@@ -19,8 +19,13 @@ local.properties
 # app/src/main/res/drawable-v24/cat_three_one.gif
 # app/src/main/res/drawable-v24/cat_three_three.gif
 # app/src/main/res/drawable-v24/cat_three_two.gif
-app/src/main/res/drawable-v24/cat_two_five.gif
-app/src/main/res/drawable-v24/cat_two_one.gif
-app/src/main/res/drawable-v24/cat_two_three.gif
+# app/src/main/res/drawable-v24/cat_two_five.gif
+# app/src/main/res/drawable-v24/cat_two_one.gif
+# app/src/main/res/drawable-v24/cat_two_three.gif
+# app/src/main/res/drawable-v24/cat_two_two.gif
+# app/src/main/res/drawable-v24/cat_two_four.gif
 app/src/main/res/drawable-v24/cat_two_two.gif
+app/src/main/res/drawable-v24/cat_two_three.gif
+app/src/main/res/drawable-v24/cat_two_one.gif
 app/src/main/res/drawable-v24/cat_two_four.gif
+app/src/main/res/drawable-v24/cat_two_five.gif
