@@ -10,17 +10,16 @@ Reinhardt de Beer
 21100115 - DV_202_V2
 
 # TimelyLemon - Android Term 3
+<p align="center">
+    <img src="assets/Logo.png" align="center" height="200" width="200" >
+</p>
 
 Timely Lemon is a trivia android app developed in Android Studio using Kotlin. This trivia app is based on pop culture from the 70's to the 90's. Based on your score you'll find out in which era you were supposed to be born.
-
-
-<img src="assets/Logo.png" align="center" height="200" width="200" >
-
 
 ## Table of contents
 
 * [Installation](#Installation)
-    * [Depebdancy Documentation](#Dependancies-Utilized)
+    * [Build With](#Build-With)
 * [Dependancies-Utilized](#Dependancies-Utilized)
 * [Features](#Features)
     * [Feature-Screenshots](#Feature-Screenshots)
@@ -48,23 +47,20 @@ Run the following in the command-line to clone the project:
     Open `Android Studio` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
 
-## Dependancies Utilized
+## Build With
 
 | Name              | Link                                                                     |
 | ----------------- | ------------------------------------------------------------------------ |
-| React Documentation |  https://reactjs.org/ |
-| Jest Documentation  |  https://jestjs.io/docs/expect |
-| React Router Dom    |  https://v5.reactrouter.com/web/guides/quick-start |
-| React Scroll        |  https://www.npmjs.com/package/react-scroll |
+| Android Studio |  https://developer.android.com/studio |
+| Kotlin  |  https://kotlinlang.org/ |
 
 
-## Features
+## Features and Functions
 
 - An overview displaying all members added total income, expenses and total tax expense (monthly).
 - Add Users and tax bracket and income after tax will be automatically calculated.
 - Add expenses and track total expenses.
 - Calculate savings based on income after tax or before tax.
-
 
 ## Feature Screenshots  
 #### Section One (Users)
