@@ -97,11 +97,17 @@ Run the following in the command-line to clone the project:
 
 ### Mockups
 
-![Mockup One](src/img/IMAC%20SEVERAL%20COLORS%20FREE.jpg)
+<p align="left">
+    <img src="assets/Mockup_Android_T3_1.png" align="center" height="300" >
+</p>
 
-![Mockup Two](src/img/Mockup.jpg)
+<p align="left">
+    <img src="assets/Mockup_Android_T3_2.png" align="center" height="300" >
+</p>
 
-![Mockup Three](src/img/MockupTwo.jpg)
+<p align="left">
+    <img src="assets/Mockup_Android_T3_3.png" align="center" height="300" >
+</p
 
 ### Wallpapers Link
 
