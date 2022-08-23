@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".SettingsActivity"
     android:background="@drawable/bg_android"
     android:padding="20dp"
@@ -139,98 +139,152 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:orientation="vertical"
-        android:background="@drawable/img_container"
-        android:padding="3dp"
-        android:layout_marginTop="15dp">
-
-        <TextView
-            android:id="@+id/github"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="GitHub"
-            android:textAlignment="center"
-            android:textSize="22dp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:padding="10dp"/>
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginLeft="10dp"
-                android:src="@drawable/profile"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="EpicBlue1"
-                android:textAlignment="center"
-                android:textSize="22dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:padding="10dp"/>
-
+            android:orientation="vertical">
             <LinearLayout
-                android:id="@+id/link_github"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:gravity="center"
-                android:layout_marginRight="14dp"
-                android:layout_marginLeft="10dp"
-                android:background="@drawable/img_container">
+                android:layout_height="170dp"
+                android:orientation="vertical"
+                android:background="@drawable/img_container"
+                android:padding="3dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/github"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GitHub"
+                    android:textAlignment="center"
+                    android:textSize="22dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:padding="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/profile"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EpicBlue1"
+                        android:textAlignment="center"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:padding="12dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/link_github"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/img_container">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Visit"/>
+                    </LinearLayout>
+                </LinearLayout>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textAlignment="center"
+                    android:text="Hi I am Reinhardt de Beer, a second year developer at Open Window. Find out more by clicking visit!">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="vertical"
+                android:background="@drawable/img_container"
+                android:padding="3dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Special thanks to:"
+                    android:textAlignment="center"
+                    android:textSize="22dp"
                     android:textStyle="bold"
-                    android:text="Visit"/>
+                    android:textColor="@color/black"
+                    android:padding="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="https://boomagain.com/70s-trivia/"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="https://groupgames101.com/90s-trivia-questions/"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="https://groupgames101.com/80s-trivia-questions-and-answers/"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/img_btn"
+                android:padding="16dp"
+                android:layout_marginTop="15dp"
+                app:strokeWidth="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="Version 1.06"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
             </LinearLayout>
         </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingRight="5dp"
-            android:paddingLeft="5dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:textAlignment="center"
-            android:text="Hi I am Reinhardt de Beer, a second year developer at Open Window. Find out more by clicking visit!">
-
-        </TextView>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/img_btn"
-        android:padding="16dp"
-        android:layout_marginTop="15dp"
-        app:strokeWidth="0dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_black"
-            android:text="Version 1.05"
-            android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textSize="22dp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

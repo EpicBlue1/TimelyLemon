@@ -62,9 +62,9 @@ class ResultsActivity : AppCompatActivity() {
             if(finalScore > 250){
                 binding.bornResult.text = "$username, you are definitely a 70's kid"
             } else if(finalScore in 101..200) {
-                binding.bornResult.text = "$username, you might be a 80's kid"
+                binding.bornResult.text = "$username, you just might be a 80's kid"
             } else if (finalScore in 49..100){
-                binding.bornResult.text = "$username, you might be a 90's kid"
+                binding.bornResult.text = "$username, you just might be a 90's kid"
             } else if(finalScore == 0){
                 binding.bornResult.text = "Too bad!"
             }
@@ -81,9 +81,9 @@ class ResultsActivity : AppCompatActivity() {
             if(finalScore > 250){
                 binding.bornResult.text = "$username, you are definitely an 80's kid"
             } else if(finalScore in 101..200) {
-                binding.bornResult.text = "$username, you might be a 70's kid"
+                binding.bornResult.text = "$username, you just might be a 70's kid"
             } else if (finalScore in 49..100){
-                binding.bornResult.text = "$username, you might be a 90's kid"
+                binding.bornResult.text = "$username, you just might be a 90's kid"
             } else if(finalScore == 0){
                 binding.bornResult.text = "Too bad!"
             }
@@ -100,9 +100,9 @@ class ResultsActivity : AppCompatActivity() {
             if(finalScore > 250){
                 binding.bornResult.text = "$username, you are definitely a 90's kid"
             } else if(finalScore in 101..200) {
-                binding.bornResult.text = "$username, you might be a 80's kid"
+                binding.bornResult.text = "$username, you just might be a 80's kid"
             } else if (finalScore in 49..100){
-                binding.bornResult.text = "$username, you might be a 70's kid"
+                binding.bornResult.text = "$username, you just might be a 70's kid"
             } else if(finalScore == 0){
                 binding.bornResult.text = "Too bad!"
             }

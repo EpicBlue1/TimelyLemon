@@ -35,7 +35,7 @@ class LandingActivity : AppCompatActivity() {
         if(lastScore == 0){
             binding.prevScore.text = "Good Luck!"
         } else {
-            binding.prevScore.text = "Previous scores in total: $totalLastScore"
+            binding.prevScore.text = "Previous Scores Total: $totalLastScore"
         }
 
         binding.btnSettings.setOnClickListener {

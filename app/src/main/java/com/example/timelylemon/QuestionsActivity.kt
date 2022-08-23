@@ -1,5 +1,6 @@
 package com.example.timelylemon
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.text.method.ScrollingMovementMethod
@@ -9,6 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.timelylemon.databinding.ActivityLandingBinding
 import com.example.timelylemon.databinding.ActivityQuestionsBinding
+import com.example.timelylemon.models.Constants
 import com.example.timelylemon.models.Constants.getAll70sQuestions
 import com.example.timelylemon.models.Constants.getAll80sQuestions
 import com.example.timelylemon.models.Constants.getAll90sQuestions
@@ -74,47 +76,55 @@ class QuestionsActivity : AppCompatActivity() {
                     //check Category One Answers correct
                     if (userAnswer.text.toString() == questions[0].optionFour) {
                         score += 50
-                        Log.i("Answerz", "Correct")
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_sev_correct)
                     } else if (userAnswer.text.toString() == questions[1].optionTwo){
                         score += 50
-                        Log.i("Answerz", "Correct")
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_sev_correct)
                     } else if (userAnswer.text.toString() == questions[2].optionTwo){
                         score += 50
-                        Log.i("Answerz", "Correct")
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_sev_correct)
                     } else if (userAnswer.text.toString() == questions[3].optionOne){
                         score += 50
-                        Log.i("Answerz", "Correct")
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_sev_correct)
                     } else if (userAnswer.text.toString() == questions[4].optionThree){
                         score += 50
-                        Log.i("Answerz", "Correct")
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_sev_correct)
                     }
                 } else if(currentTrivia == 2){
                     //check Category Two Answers correct
-                    if (userAnswer.text.toString() == questions[0].optionTwo) {
-                        Log.i("Answerz", "Correct")
+                    if (userAnswer.text.toString() == questions[0].optionThree) {
                         score += 50
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_eight_correct)
                     } else if (userAnswer.text.toString() == questions[1].optionTwo){
                         score += 50
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_eight_correct)
                     } else if (userAnswer.text.toString() == questions[2].optionTwo){
                         score += 50
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_eight_correct)
                     } else if (userAnswer.text.toString() == questions[3].optionOne){
                         score += 50
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_eight_correct)
                     } else if (userAnswer.text.toString() == questions[4].optionFour){
                         score += 50
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_eight_correct)
                     }
                 } else if(currentTrivia == 3){
                     //check Category Three Answers correct
                     if (userAnswer.text.toString() == questions[0].optionFour) {
                         score += 50
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_nine_correct)
                     } else if (userAnswer.text.toString() == questions[1].optionTwo){
                         score += 50
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_nine_correct)
                     } else if (userAnswer.text.toString() == questions[2].optionTwo){
                         score += 50
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_nine_correct)
                     } else if (userAnswer.text.toString() == questions[3].optionOne){
-                        Log.i("Answer One:", "Correct")
                         score += 50
-                    } else if (userAnswer.text.toString() == questions[4].optionFour){
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_nine_correct)
+                    } else if (userAnswer.text.toString() == questions[4].optionThree){
                         score += 50
+                        userAnswer.setBackgroundResource(R.drawable.img_cat_nine_correct)
                     }
                 }
 
@@ -129,6 +139,7 @@ class QuestionsActivity : AppCompatActivity() {
                     intent.putExtra("QuestionNum", currentTrivia)
                     Log.i("current Cat", currentTrivia.toString())
                     intent.putExtra("username", username)
+
                     startActivity(intent)
                     finish()
                 } else {
@@ -137,7 +148,7 @@ class QuestionsActivity : AppCompatActivity() {
                     intent.putExtra("username", username)
                     intent.putExtra("QuestionNum", currentTrivia)
                     intent.putExtra("questionNumber", questionNumber + 1)
-                    //pass score
+                    //pass more values
                     intent.putExtra("Score", score)
                     intent.putExtra("TriviaNumber", currentTrivia)
 
