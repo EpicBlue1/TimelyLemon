@@ -51,9 +51,8 @@ Run the following in the command-line to clone the project:
 
 | Name              | Link                                                                     |
 | ----------------- | ------------------------------------------------------------------------ |
-| <img src="assets/Kotlin_logo.png" height="35" width="35" > Android Studio |  https://developer.android.com/studio |
-| <img src="assets/Kotlin_logo.png" height="35" width="35" > Kotlin |  https://kotlinlang.org/ |
-
+| <p align="left"><img src="assets/Logo.png" align="center" height="35" width="35" ></p> <p align="left">Android Studio</p> |  https://developer.android.com/studio |
+| <p align="left"><img src="assets/Logo.png" align="center" height="35" width="35" ></p> <p align="left">Android Studio</p> Kotlin |  https://kotlinlang.org/ |
 
 ## Features and Functions
 
@@ -70,7 +69,10 @@ Run the following in the command-line to clone the project:
 #### Section Three (Savings)
 ![App Screenshot](src/img/SavingsSec.png)
 
-# Ideation
+
+## Development Process
+
+### Ideation
 [Pinterest Board For Concept](https://za.pinterest.com/debeer0072/unit-testing-website/)
 
 ### Wireframe
@@ -78,9 +80,6 @@ Run the following in the command-line to clone the project:
 
 ### User FLow
 ![App Screenshot](src/img/UserFlow.png)
-
-
-## Development Process
 
 * Utilized React `React` dependency for building the project
 * Utilized React `Jest` dependency for testing my code (functions and renders)
