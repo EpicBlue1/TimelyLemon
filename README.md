@@ -21,7 +21,6 @@ Timely Lemon is a trivia android app developed in Android Studio using Kotlin. T
 * [Installation](#Installation)
 * [Build With](#Build-With)
 * [Features](#Features-and-Functions)
-    * [Feature-Screenshots](#Feature-Screenshots)
 * [Ideation](#Ideation)
 * [Development-Process](#Development-Process)
     * [Challenges](#Challenges)
@@ -63,15 +62,6 @@ Run the following in the command-line to clone the project:
 - Add expenses and track total expenses.
 - Calculate savings based on income after tax or before tax.
 
-## Feature Screenshots  
-#### Section One (Users)
-![App Screenshot](src/img/UsersSec.png)
-#### Section Two (Expenses)
-![App Screenshot](src/img/ExpensesSec.png)
-#### Section Three (Savings)
-![App Screenshot](src/img/SavingsSec.png)
-
-
 ## Development Process
 
 ### Ideation
@@ -87,10 +77,6 @@ Run the following in the command-line to clone the project:
     <img src="assets/UserFlow.jpg" align="center" height="450" >
 </p>
 
-* Utilized React `React` dependency for building the project
-* Utilized React `Jest` dependency for testing my code (functions and renders)
-* Implemented smooth Scrolling between sections with `React-Scroll`.
-
 ## Challenges
 
 * Jest is inconsistent at times
@@ -105,7 +91,7 @@ Run the following in the command-line to clone the project:
 <p align="center">
     <img src="assets/Mockup_Android_T3_1.png" align="left" height="200" >
     <img src="assets/Mockup_Android_T3_2.png" align="left" height="200" >
-    <img src="assets/Mockup_Android_T3_3.png" align="left" height="200" >
+    <img src="assets/Mockup_Android_T3_3.png" height="200" >
 </p>
 
 
