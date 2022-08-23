@@ -11,7 +11,7 @@ Reinhardt de Beer
 
 # TimelyLemon - Android Term 3
 <p align="center">
-    <img src="assets/Logo.png" align="center" height="200" width="200" >
+    <img src="assets/Logo.png" align="center" height="300" width="300" >
 </p>
 
 Timely Lemon is a trivia android app developed in Android Studio using Kotlin. This trivia app is based on pop culture from the 70's to the 90's. Based on your score you'll find out in which era you were supposed to be born.
@@ -19,8 +19,7 @@ Timely Lemon is a trivia android app developed in Android Studio using Kotlin. T
 ## Table of contents
 
 * [Installation](#Installation)
-    * [Build With](#Build-With)
-* [Dependancies-Utilized](#Dependancies-Utilized)
+* [Build With](#Build-With)
 * [Features](#Features)
     * [Feature-Screenshots](#Feature-Screenshots)
 * [Ideation](#Ideation)
@@ -44,14 +43,14 @@ Run the following in the command-line to clone the project:
    ```sh
    git clone https://github.com/EpicBlue1/TimelyLemon.git
    ```
-    Open `Android Studio` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
+3. Open `Android Studio` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
 
 
 ## Build With
 
 | Name              | Link                                                                     |
 | ----------------- | ------------------------------------------------------------------------ |
-| Android Studio |  https://developer.android.com/studio |
+| Android Studio <img src="assets/Kotlin_logo.png" align="center" height="300" width="300" > |  https://developer.android.com/studio |
 | Kotlin  |  https://kotlinlang.org/ |
 
 
