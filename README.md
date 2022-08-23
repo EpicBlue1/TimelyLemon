@@ -20,7 +20,7 @@ Timely Lemon is a trivia android app developed in Android Studio using Kotlin. T
 
 * [Installation](#Installation)
 * [Build With](#Build-With)
-* [Features](#Features)
+* [Features](#Features-and-Functions)
     * [Feature-Screenshots](#Feature-Screenshots)
 * [Ideation](#Ideation)
 * [Development-Process](#Development-Process)
@@ -43,15 +43,16 @@ Run the following in the command-line to clone the project:
    ```sh
    git clone https://github.com/EpicBlue1/TimelyLemon.git
    ```
-3. Open `Android Studio` and select `File | Open...` from the menu. Select cloned directory and press `Open` button
+3. Open `Android Studio` and select `File | Open...` from the menu. Select cloned directory and press `Open` button.
 
+4. No other prerequisites.
 
 ## Build With
 
 | Name              | Link                                                                     |
 | ----------------- | ------------------------------------------------------------------------ |
-| Android Studio <img src="assets/Kotlin_logo.png" align="center" height="300" width="300" > |  https://developer.android.com/studio |
-| Kotlin  |  https://kotlinlang.org/ |
+| <img src="assets/Kotlin_logo.png" height="75" width="75" > Android Studio |  https://developer.android.com/studio |
+| <img src="assets/Kotlin_logo.png" height="75" width="75" > Kotlin |  https://kotlinlang.org/ |
 
 
 ## Features and Functions
