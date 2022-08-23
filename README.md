@@ -79,12 +79,12 @@ Run the following in the command-line to clone the project:
 
 ### Wireframes
 <p align="center">
-    <img src="assets/Wireframes.jpg" align="left" height="350" >
+    <img src="assets/Wireframes.jpg" align="center" height="350" >
 </p>
 
 ### User FLow
 <p align="center">
-    <img src="assets/UserFlow.jpg" align="left" height="450" >
+    <img src="assets/UserFlow.jpg" align="center" height="450" >
 </p>
 
 * Utilized React `React` dependency for building the project
