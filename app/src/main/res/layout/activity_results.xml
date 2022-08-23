@@ -78,7 +78,7 @@
         android:orientation="vertical"
         android:background="@drawable/img_container"
         android:gravity="center"
-        android:padding="10dp"
+        android:padding="15dp"
         app:strokeWidth="0dp"
         >
         <TextView
@@ -89,7 +89,7 @@
             android:text="You are definitely a 70's kid"
             android:textAlignment="center"
             android:textColor="@color/black"
-            android:textSize="36sp"
+            android:textSize="32sp"
             android:textStyle="bold" />
 
     </LinearLayout>
