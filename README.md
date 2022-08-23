@@ -105,9 +105,13 @@ Run the following in the command-line to clone the project:
 
 ### Wallpapers Link
 
-Throughout the project I had to create a lot of custom ui and ended up making some nice backgrounds/wallpapers. Feel free to download.
+Throughout the project I had to create a lot of custom ui and ended up making some nice backgrounds/wallpapers. Feel free to download!
 
-[Wallpapers](https://drive.google.com/file/d/1SwXcHJvZ8XLswMH9NlxUMMFmEw1DMTv7/view?usp=sharing)
+<p align="center">
+    <img src="assets/Wallpapers.png" align="center" height="300" >
+</p>
+
+[Download](https://drive.google.com/file/d/1SwXcHJvZ8XLswMH9NlxUMMFmEw1DMTv7/view?usp=sharing)
 
 ### Promotional Video
 
@@ -131,4 +135,10 @@ Distributed under the MIT License. See `LICENSE` for more information.\
 
 * **Reinhardt de Beer** - [21100115@virtualwindow.co.za](mailto:21100115@virtualwindow.co.za) - [@rdb_fotopatat](https://www.instagram.com/rdb_fotopatat/) 
 * **Project Link** - https://github.com/EpicBlue1/TimelyLemon
+
+## Acknowledgements
+
+* **70's Trivia Question Ideas** - [Boomagain-70s Trivia](https://boomagain.com/70s-trivia/)
+* **80's Trivia Question Ideas** - [Groupgames101-80s Trivia](https://groupgames101.com/90s-trivia-questions/)
+* **90's Trivia Question Ideas** - [Groupgames101-90s Trivia](https://boomagain.com/70s-trivia/)
  
