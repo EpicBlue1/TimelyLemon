@@ -78,12 +78,12 @@ Run the following in the command-line to clone the project:
 [Pinterest Board For Concept](https://za.pinterest.com/debeer0072/android_t3_y2/)
 
 ### Wireframes
-<p align="left">
+<p align="center">
     <img src="assets/Wireframes.jpg" align="left" height="350" >
 </p>
 
 ### User FLow
-<p align="left">
+<p align="center">
     <img src="assets/UserFlow.jpg" align="left" height="450" >
 </p>
 
@@ -102,7 +102,7 @@ Run the following in the command-line to clone the project:
 
 ### Mockups
 
-<p align="left">
+<p align="center">
     <img src="assets/Mockup_Android_T3_1.png" align="left" height="200" >
     <img src="assets/Mockup_Android_T3_2.png" align="left" height="200" >
     <img src="assets/Mockup_Android_T3_3.png" align="left" height="200" >
