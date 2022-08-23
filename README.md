@@ -51,8 +51,8 @@ Run the following in the command-line to clone the project:
 
 | Name              | Link                                                                     |
 | ----------------- | ------------------------------------------------------------------------ |
-| <img src="assets/Kotlin_logo.png" height="75" width="75" > Android Studio |  https://developer.android.com/studio |
-| <img src="assets/Kotlin_logo.png" height="75" width="75" > Kotlin |  https://kotlinlang.org/ |
+| <img src="assets/Kotlin_logo.png" height="35" width="35" > Android Studio |  https://developer.android.com/studio |
+| <img src="assets/Kotlin_logo.png" height="35" width="35" > Kotlin |  https://kotlinlang.org/ |
 
 
 ## Features and Functions
