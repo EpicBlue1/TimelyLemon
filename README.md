@@ -21,8 +21,9 @@ Timely Lemon is a trivia android app developed in Android Studio using Kotlin. T
 * [Installation](#Installation)
 * [Build With](#Build-With)
 * [Features](#Features-and-Functions)
-* [Ideation](#Ideation)
 * [Development-Process](#Development-Process)
+    * [Ideation](#Ideation)
+    * [Wireframes](#Wireframes)
     * [Challenges](#Challenges)
 * [Final-Outcome](#Final-Outcome)
     * [Mockups](#Mockups)
@@ -80,7 +81,7 @@ Run the following in the command-line to clone the project:
     <img src="assets/UserFlow.jpg" align="center" height="450" >
 </p>
 
-## Challenges encountered
+## Challenges
 
 * Layout styling inside kotlin is limited (grid, as far as I know, can't be set to span two columns)
 * Kotlin is still young, cant find much help online when stuck
@@ -107,11 +108,11 @@ Throughout the project I had to create a lot of custom ui and ended up making so
 
 [Download](https://drive.google.com/file/d/1SwXcHJvZ8XLswMH9NlxUMMFmEw1DMTv7/view?usp=sharing)
 
-### Video Demonstration
+## Video Demonstration
 
 To see a run through of the application, click below:
 
-[View Demonstration](https://youtu.be/My5EZHe_pUE)
+[View Demonstration](https://youtu.be/BsTv7s8KLRI)
 
 ## Authors
 
@@ -119,7 +120,7 @@ To see a run through of the application, click below:
 
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.\
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 

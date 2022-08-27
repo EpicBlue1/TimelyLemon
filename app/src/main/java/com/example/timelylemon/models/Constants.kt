@@ -14,12 +14,6 @@ object Constants {
     val CAT_TWO_SCORE: String = "cattwoscore"
     val CAT_THREE_SCORE: String = "cathreescore"
 
-    val ONE_CORRECT: String = "onecorrect"
-    val TWO_CORRECT: String = "twocorrect"
-    val THREE_CORRECT: String = "threecorrect"
-    val FOUR_CORRECT: String = "fourcorrect"
-    val FIVE_CORRECT: String = "fivecorrect"
-
     fun getAll70sQuestions() : ArrayList<Question> {
         var all70sQuestions = ArrayList<Question>()
 

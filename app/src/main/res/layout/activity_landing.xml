@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="6dp"
             android:fontFamily="@font/roboto"
-            android:text="Timely Lemon is the trivia app based on pop culture from the 70's to the 90's. Test yourself and find out in which era you were supposed to be born !"
+            android:text="TimelyLemon is the trivia app based on pop culture from the 70's to the 90's. Test yourself and find out in which era you were supposed to be born !"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="18sp" />
